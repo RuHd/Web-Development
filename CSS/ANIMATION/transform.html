@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: transparent;
+        border: 3px solid red;
+        width: 100px;
+        height: 100px;
+        animation-name: rotation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+
+    @keyframes rotation {
+        from { transform: rotateZ(0deg)}
+        to   { transform: rotateZ(360deg) }
+        
+    }
+
+
+</style>
+<body>
+    <div></div>
+    <!-- TRANSFORM
+
+
+2D:
+
+METHODS
+
+Translate() = Muda a posição atual  de um elemento utilizando parametros x e y
+
+Rotate() = Gira o elemento em sentido horário ou contrário. (paramentro em graus.
+Valor negativo = gira contrario) (Valor = xdeg)
+
+scale() = muda o tamanho de um elemento, recebendo os parametros que correspondem
+x vezes a mudança de tamanho referente a altura e largura do elemento.
+(OBS: Se 2º parametro não é declarado, recebe o mesmo valor do 1º)
+
+scalex() = Aumenta ou diminui a largura
+scaley() = Aumenta ou diminui a altura
+
+skew() = Inclina o elemento baseado no parametro estabelecido em graus.
+
+skewy() = Inclinação no eixo Y
+skewx() = Inclinação no eixo x
+
+matrix() = Recebe todos os métodos acima.
+
+SINTAXE:
+
+matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+3D:
+
+rotateX() Rotação nos eixos x y e z - recebe parametros em graus
+rotateY()
+rotateZ() -->
+
+
+
+</body>
+</html>

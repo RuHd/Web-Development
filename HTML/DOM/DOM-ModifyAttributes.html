@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>
+            DOM - Modifying Attributes
+        </title>    
+    </head>
+
+       <!--
+            Sintaxe para a mudança de valores de atributos:
+            
+            document.getElementById(id).attribute = new value
+
+            To Remove an attribute:
+
+            document.getElementById(id).removeAttribute("")
+        -->
+    <body>
+        <p id="teste" style="background-color:red;">teste</p>
+        <ul id="lista" type="square">
+            <li>teste</li>
+            <li>teste</li>
+            <li>teste</li>
+        </ul>
+
+        <script>
+            var change = document.getElementById("teste")
+            var changeList = document.getElementById("lista")
+
+            change.style="background-color:green;"
+            // Método para mudar atributos CSS
+
+            changeList.type = "circle"
+            changeList.removeAttribute("type")
+
+            // Método para remover um atributo
+            
+        </script>
+    </body>
+    
+</html>

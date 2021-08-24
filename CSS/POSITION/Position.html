@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    .boxFormat {        
+        width:100px;
+        height:100px;
+    }
+    #box1 {
+        background-color:red;
+        position:relative; /* position accordingly to the initial
+        location*/
+        left: 100px;
+    }
+
+    #box2 {
+        background-color:blue;
+        margin:auto;
+    }
+
+    #box3 {
+        background-color:green;
+        position:absolute; /* To maneuver the element, we must
+        to set numbers for at least one of the axis (top, bottom...)
+        */
+        top: 0px;
+        right: 730px; /* If there's a element on the given position,
+        the positioned element will be over the previous one.
+        
+        */
+    }
+
+    #box4 {
+        background-color:rgb(67, 8, 90);
+        position: fixed; /* FiXED position works like the absolute one, but it will be fixed on the position with the change of the 
+        screen size and it will ignore margin of other elements.*/
+        right: 0px;
+        bottom: 0px;
+    }
+
+    p {
+        color:white;
+        margin:0;
+    }
+
+
+</style>
+<body>
+    <!--
+        The position set, as default,
+        is the static.
+
+        ABSOLUTE: Moves the element 
+        according to its parent with
+        position different than static
+
+        (If not so, it will move accordin
+         to the window)
+        
+        RELATIVE:
+
+        FIXED:
+
+
+    -->
+    <div class ="boxFormat" id="box1">
+        <p>box 1</p>
+    </div>
+    <div class ="boxFormat" id="box2">
+        <p>box 2</p>
+    </div>
+    <div class ="boxFormat" id="box3">
+        <p>box 3</p>
+    </div>
+    <div class ="boxFormat" id="box4">
+        <p>box 4</p>
+    </div>
+</body>
+</html>

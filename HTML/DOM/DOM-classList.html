@@ -1,0 +1,63 @@
+<!--
+    classList property:
+
+    Manipulate the class in the elements
+
+    classList.Toggle : TRUE/FALSE based on the class if it does exists on the target language.
+        - FALSE: Remove the class
+        - TRUE : Add the class
+
+
+
+
+
+
+
+-->
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - classList</title> 
+</head>
+<style>
+ 
+
+    .full {
+        opacity: 0;
+    }
+</style>
+<body>
+        <div onclick="disappear()" >
+            Teste
+        </div>
+        <div>
+            Teste 2
+        </div>
+        <script>
+            const teste = document.getElementsByTagName("div")
+            
+            function disappear() {
+                return teste[0].classList.toggle("full")
+                 
+            }
+
+            
+
+           
+
+           
+
+            
+      
+            
+            
+
+
+        </script>
+</body>
+</html>

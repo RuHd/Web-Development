@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>
+            DOM - CREATING ELEMENTS
+        </title>    
+    </head>
+
+       <!--
+            ADDING AND DELETING ELEMENTS
+            ---------------------------
+
+            document.createElement(element)	Create an HTML element
+            document.removeChild(element)	Remove an HTML element
+            document.appendChild(element)	Add an HTML element
+            document.replaceChild(new, old)	Replace an HTML element
+            document.write(text)	Write into the HTML output stream
+            document.createTextNode(value) Create a text 
+            document.insertBefore() Add a child before an existing one.
+
+        -->
+    <body>
+
+        <div id="container">
+            <p class="teste"> Teste </p> 
+            <p class="teste"> Teste </p> 
+            <p class="teste"> Teste </p> 
+            <p class="teste"> Teste </p> 
+        </div>
+       
+       <script>
+            var H1 =  document.createElement("p")
+            var NewContent = document.createTextNode("Painel de Testes")
+
+            H1.appendChild(NewContent)
+
+            var CORPO = document.getElementByTagName("body")
+
+            CORPO.appendChild(H1)
+
+            
+       </script>
+    </body>
+    
+</html>

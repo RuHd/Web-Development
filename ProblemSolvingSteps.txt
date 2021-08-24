@@ -1,0 +1,9 @@
+Principles of problem solving
+
+1 - Understanding the problem
+2 - Having a strategy to tackle the problem
+3 - Reducing it in smaller parts
+4 - Starting small and bulk up over the time
+5 - Debug for possible errors
+6 - Rethink the strategy if the erros haven't been found
+7 - Start all over again

@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+
+}
+
+#calculadora {
+    display:flex;
+    position:relative;
+    flex-wrap:wrap;
+    width: 400px;
+    padding: 20px;
+    background-color: grey;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#teclado {
+    align-self: center; 
+}
+
+#visor {
+    width: 291px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+
+}
+   
+
+
+#teclado button {
+    height:50px;
+    width: 70px;
+
+}
+
+#list-options a {
+    display:block;
+}

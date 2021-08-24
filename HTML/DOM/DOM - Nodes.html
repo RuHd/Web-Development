@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>
+            DOM - NODES
+        </title>    
+    </head>
+
+       <!--
+          Nodes: Elementos HTML
+
+          Método de criação:
+
+          1º Criação do elemento utilizando a sintaxe:
+            document.createElement("element")
+
+          2º Criação do texto pela sintaxe:
+            document.createTextNode("Text here")
+          
+          3º Atribuir Texto para o elemento recém-criado:
+            document.AppendChild(newElement)  
+
+         document.insertBefore() :
+            Atribui um filho para o elemento pai que antecede um filho existente
+               
+
+        -->
+    <body>
+        <div id="container">
+            <p id="p1">Teste 1</p>
+            <p id="p2">Teste 2</p>
+            
+        </div>
+        
+
+       <script>
+           var para = document.createElement("p") // 1º passo
+           var node = document.createTextNode(" teste 3") // 2º passo
+
+           para.appendChild(node) // 3º passo
+
+          var subs = document.getElementById("container")
+          //Atribuiu-se à uma variável o element div
+          // do id "container"
+          //
+
+          subs.appendChild(para)
+
+          // Atribuindo o elemento com o texto recém-criado
+          // para dentro da DIV "Container"
+          //
+          //
+          //
+
+
+          
+       </script>
+    </body>
+    
+</html>

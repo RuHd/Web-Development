@@ -1,0 +1,24 @@
+BACKGROUND
+
+Different images is separated by commas
+
+PROPERTIES:
+
+background-size: size of the image. Can use values as % 
+
+BACKGROUND-ORIGIN
+
+KEYWORDS:
+
+Cover:Cover all te content area . Height and width can be equal or exceed the content
+area
+
+Contain: Be as large as possible inside the content area, be limited by its sizes.
+
+COVERING THE BROWSER
+
+.Centering the image
+. Avoiding scrollbars
+. Being fixed
+. Fill the page with no white spaces left
+

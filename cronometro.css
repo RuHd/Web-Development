@@ -1,0 +1,29 @@
+
+
+body {
+    display:flex;
+   
+}
+
+#container {
+    align-items: center;
+    margin: auto;
+    
+}
+
+.tempo {
+    color: red;
+}
+
+h1 {
+    background-color: aqua;
+}
+
+button {
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+
+}

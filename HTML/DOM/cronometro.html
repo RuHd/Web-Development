@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cronometro 1.0</title>
+    </head>
+    <style>
+        #container {
+            text-align: center;
+           
+        }
+
+        #começar {
+            padding:10px;
+            width:100px;
+            font-size : 1em;
+            background-color:blue;
+            color: white;
+            border:none;
+        }
+
+        #começar :hover {
+            background-color: red;
+        }
+
+
+    </style>
+    <body>
+        <div id="container">
+            <h2>Cronometro 1.0</h2>
+
+            <p>Selecione o valor dos segundos: </p>
+            <select id="Segundos"></select>
+            <p>Selecione o valor dos Minutos: </p>
+            <select id="Minutos"></select> <br><br>
+            <button id="começar">Iniciar</button>
+
+            <div id="display"></div>
+
+
+        </div>
+        <script>
+            var Segundos= document.getElementById("Segundos");
+            var Minutos= document.getElementById("Minutos");
+            var segundoAtual;
+            var minutoAtual;
+            var display = document.getElementById("display")
+            var começar = document.getElementById("começar")
+
+            for (let i =1 ; i<60;i++) {
+                Segundos.innerHTML += '<option value="'+ i +'">'+i+'</option>'
+            }
+
+            for (let i =0 ; i<60;i++) {
+                Minutos.innerHTML += '<option value="'+ i +'">'+i+'</option>'
+            }
+
+            começar.addEventListener("click",function(){
+                minutoAtual = Minutos.value
+                segundoAtual = Segundos.value
+
+                
+
+                
+            })
+        </script>
+    </body>
+</html>

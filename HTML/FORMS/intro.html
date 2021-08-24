@@ -1,0 +1,93 @@
+<!--
+ <FORM>
+
+    Usado para coletar dados inseridos do usuário.
+
+    <FORM> não é visível no navegador, é usado como container para outros elementos como
+    <input> e <buttons>
+
+    ATRIBUTOS:
+    
+    Action: Atribui o arquivo que irá manipular o FORM quando for enviado 
+
+    <INPUT> 
+
+    Mais usado elemento dentro de um formulário, pode ser utilizado de várias maneiras
+    podendo escolher o seu tipo pelo atributo type
+
+    * Input type = "text" exibe uma caixa para ser inserida informações de texto.
+
+    ATRIBUTOS:
+
+    Name: Atributo que terá o seu valor enviado para o servidor ao ser enviado.
+
+    <LABEL>
+
+    * Pode ser lido em voz alta 
+    * Facilita a seleção de botões inseridos dentro de <label>
+
+    <Button> : INLINE
+
+    *TIPOS: 
+
+    -Submit: Botão para envio do formulário ao servidor
+    - Checkboxes: Seleção múltipla de caixas
+    - Radio: Seleção única dentro de opções com um círculo para a marcação.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM examples</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    li {
+        
+        display:inline-block;
+    }
+
+
+</style>
+<body>
+    <form>
+        <h4> Nome: </h4>
+        <input type="text">
+        <h4> Sobrenome: </h4>
+        <input type="text"><BR><BR>
+        <h4> Escolha sua cidade</h4> 
+
+        <label>
+            <ul>
+                <li>
+                    <input type = "radio"> São Paulo
+                </li>
+
+                <li>
+                    <input type = "radio"> Rio de Janeiro
+                </li>
+
+                <li>
+                    <input type = "radio"> Brasília
+                </li>
+
+                <li>
+                    <input type = "radio"> Curitiba
+                </li>
+
+                <li>
+                    <input type = "radio"> Salvador
+                </li>
+            </ul>
+        </label>   
+            
+         <BR>
+        <button type = "submit" name="cadastro">Enviar</button>
+    </form>
+    
+</body>
+</html>

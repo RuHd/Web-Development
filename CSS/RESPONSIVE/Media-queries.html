@@ -1,0 +1,100 @@
+<!-- @media - define estilo baseado em diversos dispositivos
+
+CSS2 - Definiu o tipo de dispositivo
+CSS3 - Ampliou o conceito para aplicar o estilo baseado na capacidade do dispositivo
+
+OBJ: Design responsivos baseado no dispositivo onde a página está sendo exibida
+
+SINTAXE :
+
+@media not|only mediatype and (expressions) { = Definido por TRUE ou FALSE
+	
+	CSS-CODE;
+
+}
+
+DEFININDO STYLESHEETS BASEADO EM DISPOSITIVOS DIFERENTES:
+
+SINXTAXE:
+
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+
+VALORES:
+
+all - Todos disp.
+print - Impressoras
+screen - monitor, tablets celulares
+speech - Leitores -->
+
+
+
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        border: 0px;
+        margin: 0px;
+    }
+    div {
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    ul {
+       
+        text-align: center;
+        display: inline-block;
+    }
+
+
+
+    h1 {
+        
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) { /*Será verde enquanto o tamanho for até 600px */
+        div {
+            
+            background-color: green;    
+            display:flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+
+    
+
+        
+}
+        
+    
+
+</style>
+<body>
+    <div id = "topo">
+        <h1 > TITULO </h1>
+        <ul >
+            <l1>SDFSADF</l1>
+            <l1>AFSADF</l1>
+            <l1>ASDFSADF</l1>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Digital Creative Agency Milan</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type = "text/css" href="animation_Intro.css">
+    </head>
+    <style>
+
+
+
+    </style>
+    <body>
+        <div id="block">
+            
+        </div>
+        <main onclick = "change(this)">
+            <div id="topo">
+                <h4 style="float:left;"> #00F</h4>
+                
+                <p> hello [at] 00f.agency     -     +39 333 700 79 90</p> 
+                </p>
+                <ul>
+                    <li>agency</li>
+                    <li>work</li>
+                    <li>contacts</li> 
+                </ul>
+                <div id="idiomas">
+                    <span>it</span>
+                    <span>en</span>
+                </div>
+            </div>
+    
+            <div id="container">
+                
+                <div id="content">
+                    <h1 style = "font-size: 100px; font-weight: bolder;"> #00F </h1>
+                    <br>
+                    <span>
+                        <img src= "">
+                    </span>
+                    We are a digital creative agency.
+                    <br>
+                    We work everyday to make something memorable.
+    
+                    <div id="album-selection">
+                        <img src = "home-slider_diegosoprana.jpg" id ="diego" class = "slide">
+                        <img src = "home-slider_fedelieccellenze.jpg" id ="fedelie" class = "slide" >
+                        <img src = "home-slider_metalgienchi.jpg" id ="metal" class = "slide" > 
+                        <ul id="list">
+                            <li class="image-maneuver" onclick = "showImage(1)" ></li>
+                            <li class="image-maneuver" onclick = "showImage(2)"></li>
+                            <li class="image-maneuver" onclick = "showImage(3)"></li>
+                        </ul>
+                    </div>
+                </div>
+              
+                
+    
+            </div>
+            <div id="footer">
+                <uL>
+                    <li>index</li>
+                    <li>agency</li>
+                    <li>work</li>
+                    <li>contacts</li>
+                    <li>__</li>
+                    <li>fb</li>
+                    <li>in</li>
+                    <li>in</li>
+                    <li>tw</li>
+                </uL>
+                <uL>
+                    <li>#00F</li>
+                    <li>privacy policy</li>
+                </uL>
+            </div> 
+        </main>
+        
+        <script>
+            const corpo = document.querySelector("body")
+            const album = document.getElementById("album-selection")
+            const buttons = document.querySelectorAll(".image-maneuver")
+            const diego = document.getElementById("diego")
+            const fedelie = document.getElementById("fedelie")
+            const metal = document.getElementById("metal")
+            const topo = document.getElementById("topo")
+            const container = document.getElementById("container")
+            const intro = document.getElementById("presentation")
+            var slide = document.querySelectorAll(".slide")
+            const block = document.getElementById("block")
+
+        
+
+
+        
+            
+
+            
+           
+
+           
+            
+           
+            
+           
+
+            
+            
+            
+          
+            
+            // Slideshow automatico:
+            // Armazenar os slides em uma váriavel (const img)
+            // 1 - Estabelecer um índice que identificada cada slide ( de 1 a 3)
+            // 2 - O loop é feito por uma função callback
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+        
+         var i = 0
+         var slideshowIndex = 0
+
+         // INTRO ANIMATION
+
+        
+
+         
+
+           
+
+         
+           
+           function showImage(index) {
+               if (index == 1) {
+                   diego.style.opacity="1"
+                   fedelie.style.opacity="0"
+                   metal.style.opacity="0"
+                  
+
+               } else if ( index == 2) {
+                   diego.style.opacity="0"
+                   fedelie.style.opacity="1"
+                   metal.style.opacity="0"
+               } else {
+                   diego.style.opacity="0"
+                   fedelie.style.opacity="0"
+                   metal.style.opacity="1" 
+               }
+           }
+            
+        
+
+
+
+
+        </script>  
+    </body>
+</html>

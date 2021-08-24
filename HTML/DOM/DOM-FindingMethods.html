@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>
+            DOM - FINDING METHODS
+        </title>
+    </head>
+
+    <!--    
+        querySelectorAll() - Seleciona elementos
+        procurando por seletores CSS
+
+        getElementByTagName() - Seleciona elementos
+        pelas Tags
+
+
+
+
+
+    -->
+    
+
+    <body>
+        <P class = "teste"> Teste 1</P>
+        <P class = "teste"> Teste 2 </P>
+
+        <P id = "resultado"></P>
+        
+        <script>
+            var x = document.querySelectorAll("p.teste")
+
+           
+                document.getElementById("resultado").innerHTML= x[0].innerHTML
+
+            
+            // Ao atribuir para uma variável os elementos baseados
+            // nos seletores CSS, Todos os resultados
+            // compatíveis são armazenados na variável
+            // podendo serem acessados determinando o índice
+            // ( Funcionalidade parecida com uma Array)
+        </script>    
+    </body>
+    
+</html>

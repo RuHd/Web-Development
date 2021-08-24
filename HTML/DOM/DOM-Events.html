@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>
+            DOM - Events
+        </title>    
+    </head>
+    <!--
+        Eventos: Ações que ocorrem que
+        acionam código do javascript .
+        
+        Ex: onclick - Ação ao clicar
+            onmouseover - Ação ao passar o mouse em cima
+            onmouseout - \\ ao tirar o mouse
+            onmousedown - \\ ao pressionar o botão
+            do mouse
+
+            onmouseup: // ao soltar o botão do mouse
+            onchange: // ao realizar mudança
+
+
+
+    -->
+    <body>
+      <div onclick="this.innerHTML = 'Tudo bem?'">Olá!!</div>
+      <!--
+          onclick- ação feita ao clicar 
+          sobre o elemento selecionado.   
+      -->
+
+      <p onclick="changeText(this)">Olá!!</p>
+
+      <!--
+          Evento pode chamar uma função 
+          javascript.
+      -->
+
+      <p onclick="this.innerHTML = 'Tudo certo?'">Olá</p>
+
+      <p onmouseover="poeMouse(this)" onmouseout="tiraMouse(this)">Passe o mouse em mim</p>
+      <!--
+          Possível a atribuição de um Event Handler a um element por uma função javascript.
+      -->
+
+      <p onmousedown="mouseApertado(this)" onmouseup="mouseSolto(this)">Olá!!!!!!</p>
+
+       <script>
+         function changeText(id) {
+             return id.innerHTML="Tudo ótimo??"
+         }
+
+         document.getElementById("cumprimento").onclick="Tudo certo?"
+
+         function poeMouse(id) {
+             return id.innerHTML="Ola"
+         }
+
+         function tiraMouse(id2) {
+             return id2.innerHTML="Passe o mouse em mim"
+         }
+
+         function mouseApertado(id3) {
+             return id3.innerHTML = "Me larga"
+         }
+
+         function mouseSolto(id4) {
+             return id4.innerHTML = "Obrigado"
+         }
+       </script>
+    </body>
+    
+</html>

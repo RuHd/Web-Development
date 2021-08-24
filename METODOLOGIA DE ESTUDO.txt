@@ -1,0 +1,26 @@
+ESTUDO DESENVOLVIMENTO WEB
+==========================
+
+ROTINA SEMANAL :
+
+4 horas - finais de semana
+30 min - seg - quinta
+
+JAVASCRIPT: 
+
+-METODOLOGIA 
+
+ 1- 1x leitura passiva para obter noção geral do conceito estudado
+ 2- 1x leitura mais ativa anotando ideias e palavras chave.
+ 3- Programar exemplos dados e colocar as anotações como comentários no programa
+ 4- Programar 3 exemplos próprios para a prática (OBS: Sem olhar as anotações)
+ 5- Executar o programa e revisar possíveis erros para correção e consulta do material anotado
+ 6- Revisão espaçada
+ 
+
+  
+ 
+    
+	
+	
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+
+    <title>Flexbox</title>
+</head>
+<style>
+    #container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .boxShape {
+        width: 100px;
+        height: 100px;
+        background-color:black;
+    }
+
+    #box12 {
+        width: 40%;
+        height:40%;
+        margin-left: 3px;
+        background-color:white;
+    }
+
+
+</style>
+<body>
+    <div id="container">
+        <div class="boxShape" id="box1">
+            <div  id="box12"></div>
+        </div>
+        <div class="boxShape" id="box2"></div>
+        <div class="boxShape" id="box3"></div>
+        <div class="boxShape" id="box4"></div>
+        <div class="boxShape" id="box5"></div>
+    </div> 
+</body>
+</html>

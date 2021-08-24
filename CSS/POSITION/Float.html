@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Float</title>
+</head>
+
+<style>
+    /* Floated elements to the same side will
+         be placed next to each other, unless the window size don't
+         fit they all in a row, then will be placed below.
+        
+    */
+    /* The float property makes the element
+         to be positioned in one the two sides, simultenously it creates
+         a new flow channel where the floated element can be overplaced
+         on the others: NaN;
+         
+         OBS: FLOATED ELEMENTS DOES NOT HIDE INNER CONTENT FROM OTHERS.
+
+         CLEAR Property: 
+
+         Used to clear the floated side (left or right), when there's a item floating to right,
+         we use clear: right. (The same is for the opposite)
+
+         OVERFLOW: AUTO: 
+
+         Commonly used to wrap again floated elements inside of its container. 
+         When a item is floating, it will get outside of its parent. 
+         OVERFLOW: AUTO will fix this problem by adjusting and wrapping
+         again the floated item. 
+
+    */
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    .boxFormat  {        
+        width:25%;
+        height:100px;
+        
+    }
+
+    .boxFormat p {
+        color: white;
+    }
+    #box1 {
+        background-color:red;
+        float: right; 
+        
+    }
+
+    #box2 {
+        background-color:blue;
+        float: left; 
+        
+    }
+
+    #box3 {
+        background-color:green;
+        float: right;
+      
+    }
+
+   
+    #container {
+        border: 5px solid red;
+    }
+
+    #container p {
+        color:black;
+        background-color:chartreuse;
+    }
+
+
+</style>
+<body>
+    <div id="container">
+       
+        <div class ="boxFormat" id="box1">
+            <p>box 1</p>
+        </div>
+        <div class ="boxFormat" id="box2">
+            <p>box 2</p>
+        </div>
+        <p style="clear:both;"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo cupiditate ad omnis quaerat molestias eum aut nam sint est officiis. Temporibus ad libero repellendus possimus corrupti dignissimos eius repudiandae iste.</p>
+    </div>
+   
+   
+</body>
+</html>
